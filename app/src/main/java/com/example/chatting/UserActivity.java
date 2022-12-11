@@ -24,7 +24,8 @@ public class UserActivity extends AppCompatActivity {
                 String nickname = username.getText().toString();
                 String serverIP = getIntent().getStringExtra("serverIP");
 
-                Intent intent = new Intent(getBaseContext(), ChatActivity.class);
+                Intent intent = new Intent(getBaseContext(), ChatActivity2.class);
+//                Intent intent = new Intent(getBaseContext(), ChatActivity.class);
                 intent.putExtra("nickname", nickname);
                 intent.putExtra("serverIP", serverIP);
                 startActivity(intent);
